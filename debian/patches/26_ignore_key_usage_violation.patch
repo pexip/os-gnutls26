@@ -1,0 +1,23 @@
+## Description: Print debug on key usage violation error rather than treating as fatal
+## Origin/Author: Adam Stokes <adam.stokes@ubuntu.com>
+## Bug: http://pad.lv/1207123
+--- a/lib/gnutls_sig.c
++++ b/lib/gnutls_sig.c
+@@ -222,7 +222,7 @@
+         if (!(cert->key_usage & GNUTLS_KEY_DIGITAL_SIGNATURE))
+           {
+             gnutls_assert ();
+-            return GNUTLS_E_KEY_USAGE_VIOLATION;
++            _gnutls_debug_log("Key usage violation was detected (ignored).\n");
+           }
+ 
+       /* External signing. */
+@@ -292,7 +292,7 @@
+     if (!(cert->key_usage & GNUTLS_KEY_DIGITAL_SIGNATURE))
+       {
+         gnutls_assert ();
+-        return GNUTLS_E_KEY_USAGE_VIOLATION;
++        _gnutls_debug_log("Key usage violation was detected (ignored).\n");
+       }
+ 
+   if (pk_algo == GNUTLS_PK_UNKNOWN)

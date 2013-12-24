@@ -1,9 +1,10 @@
 Source: gnutls26
 Section: libs
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
-Uploaders: Andreas Metzler <ametzler@debian.org>,
+XSBC-Pexip-Original-Uploaders: Andreas Metzler <ametzler@debian.org>,
  Eric Dorland <eric@debian.org>,
  James Westby <jw+debian@jameswestby.net>,
  Simon Josefsson <simon@josefsson.org>
@@ -16,6 +17,7 @@ Standards-Version: 3.9.2
 Vcs-Svn: svn://svn.debian.org/svn/pkg-gnutls/packages/gnutls26/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnutls/packages/gnutls26/trunk/
 Homepage: http://www.gnutls.org/
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: libgnutls-dev
 Section: libdevel

@@ -1,3 +1,21 @@
+gnutls26 (2.12.14-5ubuntu3.7) precise-security; urgency=medium
+
+  * SECURITY UPDATE: certificate validation bypass
+    - debian/patches/CVE-2014-0092.patch: correct return codes in
+      lib/x509/verify.c.
+    - CVE-2014-0092
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 03 Mar 2014 14:16:13 -0500
+
+gnutls26 (2.12.14-5ubuntu3.6) precise-security; urgency=medium
+
+  * SECURITY UPDATE: incorrect v1 intermediate cert handling
+    - debian/patches/CVE-2014-1959.patch: don't consider a v1 intermediate
+      cert to be a valid CA by default in lib/x509/verify.c.
+    - CVE-2014-1959
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 24 Feb 2014 14:01:03 -0500
+
 gnutls26 (2.12.14-5ubuntu3.5) precise-proposed; urgency=low
 
   * debian/patches/26_ignore_key_usage_violation.patch: 

@@ -12,3 +12,4 @@ CVE-2013-2116.patch
 26_ignore_key_usage_violation.patch
 CVE-2014-1959.patch
 CVE-2014-0092.patch
+CVE-2014-3466.patch

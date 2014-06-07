@@ -1,8 +1,17 @@
-gnutls26 (2.12.14-5ubuntu3.7pexip1) pexip; urgency=low
+gnutls26 (2.12.14-5ubuntu3.8pexip1) pexip; urgency=low
 
   * Prepare Pexip packaging
 
- -- John-Mark Bell <jmb@pexip.com>  Thu, 06 Mar 2014 09:46:26 +0000
+ -- John-Mark Bell <jmb@pexip.com>  Sat, 07 Jun 2014 14:48:14 +0100
+
+gnutls26 (2.12.14-5ubuntu3.8) precise-security; urgency=medium
+
+  * SECURITY UPDATE: memory corruption due to server hello parsing
+    - debian/patches/CVE-2014-3466.patch: validate session_id_len in
+      lib/gnutls_handshake.c.
+    - CVE-2014-3466
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Sun, 01 Jun 2014 11:04:42 -0400
 
 gnutls26 (2.12.14-5ubuntu3.7) precise-security; urgency=medium
 
